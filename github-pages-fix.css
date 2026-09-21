@@ -1,0 +1,20 @@
+/* Fallback visual para GitHub Pages: el contenido nunca depende de JavaScript para mostrarse. */
+.reveal-section,
+.reveal-stagger > a,
+.quote-intro,
+.quote-form,
+.location-copy,
+.map-frame {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+.reveal-stagger > a,
+.is-visible .reveal-stagger > a,
+.quote-section .quote-intro,
+.quote-section .quote-form,
+.location-section .location-copy,
+.location-section .map-frame {
+  animation: none !important;
+}

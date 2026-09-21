@@ -1,0 +1,6 @@
+:HL["/GANADMEX/assets/static/chunks/0-_wwqg8t32yc.css","style"]
+:HL["/GANADMEX/logo-grupo-ganadmex.png","image"]
+:HL["/GANADMEX/catalogo/tomate-real.jpeg","image"]
+:HL["/GANADMEX/catalogo/tomate-tamano.jpeg","image"]
+:HL["/GANADMEX/catalogo/tomate-madurez.jpeg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"productos","param":null,"prefetchHints":0,"slots":{"children":{"name":"tomate","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"04OO7Bln8hXqIdMAMS8Lu"}

@@ -1,0 +1,54 @@
+/* El contenido parte visible. Las animaciones solo se activan si el JS independiente carga. */
+.reveal-section,
+.reveal-stagger > a,
+.quote-intro,
+.quote-form,
+.location-copy,
+.map-frame {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+html.motion-ready .reveal-section:not(.is-visible),
+html.motion-ready .reveal-section:not(.is-visible) .quote-intro,
+html.motion-ready .reveal-section:not(.is-visible) .quote-form,
+html.motion-ready .reveal-section:not(.is-visible) .location-copy,
+html.motion-ready .reveal-section:not(.is-visible) .map-frame {
+  opacity: 0 !important;
+  transform: translateY(24px) !important;
+}
+
+html.motion-ready .reveal-section.is-visible,
+html.motion-ready .reveal-section.is-visible .quote-intro,
+html.motion-ready .reveal-section.is-visible .quote-form,
+html.motion-ready .reveal-section.is-visible .location-copy,
+html.motion-ready .reveal-section.is-visible .map-frame {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity .7s ease, transform .7s ease !important;
+}
+
+html.motion-ready .reveal-section:not(.is-visible) .reveal-stagger > a {
+  opacity: 0 !important;
+  transform: translateY(20px) !important;
+}
+
+html.motion-ready .reveal-section.is-visible .reveal-stagger > a {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity .55s ease, transform .55s ease !important;
+}
+
+html.motion-ready .reveal-section.is-visible .reveal-stagger > a:nth-child(2) { transition-delay: .08s !important; }
+html.motion-ready .reveal-section.is-visible .reveal-stagger > a:nth-child(3) { transition-delay: .16s !important; }
+html.motion-ready .reveal-section.is-visible .reveal-stagger > a:nth-child(4) { transition-delay: .24s !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  html.motion-ready .reveal-section,
+  html.motion-ready .reveal-section * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
